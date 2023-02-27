@@ -6,7 +6,7 @@
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 14:56:06 by dchuah            #+#    #+#             */
-/*   Updated: 2023/02/27 18:39:48 by dchuah           ###   ########.fr       */
+/*   Updated: 2023/02/27 22:10:53 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	size_t	j;
 
-	i = 0;
+	i = -1;
 	j = 0;
 	if (!s1)
 		return (0);
@@ -27,16 +27,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3 = malloc((len + 1) * sizeof(char));
 	if (!s3)
 		return (0);
-	while (i < ft_strlen(s1))
-	{
+	while (++i < ft_strlen(s1))
 		s3[i] = s1[i];
-		i++;
-	}
 	while (i < len)
 	{
 		s3[i] = s2[j];
-		i++;
 		j++;
+		i++;
 	}
 	s3[i] = 0;
 	return (s3);

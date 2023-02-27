@@ -6,7 +6,7 @@
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 18:41:31 by dchuah            #+#    #+#             */
-/*   Updated: 2023/02/27 20:08:47 by dchuah           ###   ########.fr       */
+/*   Updated: 2023/02/27 22:16:04 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1)
 		return (0);
 	s2 = malloc((strlen(s1) + 1 - strlen(set)) * sizeof(char));
+	if (!s2)
+		return (0);
 }
