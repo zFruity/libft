@@ -6,7 +6,7 @@
 #    By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 12:01:03 by dchuah            #+#    #+#              #
-#    Updated: 2023/02/27 20:08:47 by dchuah           ###   ########.fr        #
+#    Updated: 2023/03/21 19:04:08 by dchuah           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,9 +35,9 @@ SRCS    	=    ft_memset.c \
 	ft_strdup.c \
 	ft_substr.c \
 	ft_strjoin.c \
-	# ft_strtrim.c \
-	# ft_split.c \
-	# ft_itoa.c \
+	ft_strtrim.c \
+	ft_split.c \
+	ft_itoa.c \
 	# ft_strmapi.c \
 	# ft_putchar_fd.c \
 	# ft_putstr_fd.c \

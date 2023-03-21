@@ -6,13 +6,14 @@
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 19:53:51 by dchuah            #+#    #+#             */
-/*   Updated: 2022/10/23 20:27:34 by dchuah           ###   ########.fr       */
+/*   Updated: 2023/03/21 16:08:02 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
