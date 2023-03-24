@@ -6,7 +6,7 @@
 #    By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 12:01:03 by dchuah            #+#    #+#              #
-#    Updated: 2023/03/23 22:56:05 by dchuah           ###   ########.fr        #
+#    Updated: 2023/03/24 20:51:42 by dchuah           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,10 +50,10 @@ BONUS		= ft_lstnew.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
 	ft_lstadd_back.c \
-	ft_lstdelone.c \
-	ft_lstclear.c \
-	ft_lstiter.c \
-	ft_lstmap.c
+	#ft_lstdelone.c \
+	# ft_lstclear.c \
+	# ft_lstiter.c \
+	# ft_lstmap.c \
 
 BONUS_OBJS	= ${BONUS:.c=.o};
 
@@ -68,8 +68,8 @@ GCC     	=    gcc
 .c.o:
 	${GCC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${INCLUDES}
 
-$(NAME):    ${OBJS}
-	${ARCR} ${NAME} ${OBJS}
+$(NAME):    ${OBJS} ${BONUS_OBJS}
+	${ARCR} ${NAME} ${OBJS} ${BONUS_OBJS}
 
 all:    ${NAME}
 
