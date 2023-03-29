@@ -6,7 +6,7 @@
 #    By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 12:01:03 by dchuah            #+#    #+#              #
-#    Updated: 2023/03/24 20:51:42 by dchuah           ###   ########.fr        #
+#    Updated: 2023/03/29 16:09:38 by dchuah           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,10 +50,10 @@ BONUS		= ft_lstnew.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
 	ft_lstadd_back.c \
-	#ft_lstdelone.c \
-	# ft_lstclear.c \
-	# ft_lstiter.c \
-	# ft_lstmap.c \
+	ft_lstdelone.c \
+	ft_lstclear.c \
+	ft_lstiter.c \
+	ft_lstmap.c \
 
 BONUS_OBJS	= ${BONUS:.c=.o};
 

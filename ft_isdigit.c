@@ -6,16 +6,13 @@
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 17:52:58 by dchuah            #+#    #+#             */
-/*   Updated: 2022/10/03 18:13:49 by dchuah           ###   ########.fr       */
+/*   Updated: 2023/03/29 18:09:55 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int a)
 {
 	if (a >= '0' && a <= '9')
-	{
 		return (1);
-	}
-	else
-		return (0);
+	return (0);
 }

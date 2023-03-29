@@ -6,7 +6,7 @@
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/23 17:05:23 by dchuah            #+#    #+#             */
-/*   Updated: 2023/02/24 18:16:32 by dchuah           ###   ########.fr       */
+/*   Updated: 2023/03/29 18:21:46 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *str, int c)
 		str++;
 	while (i > -1)
 	{
-		if (*str == c)
+		if (*str == (char)c)
 			return ((char *)(str));
 		str--;
 		i--;

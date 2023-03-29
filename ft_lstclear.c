@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/03 17:48:18 by dchuah            #+#    #+#             */
-/*   Updated: 2023/03/29 21:23:05 by dchuah           ###   ########.fr       */
+/*   Created: 2023/03/29 14:51:46 by dchuah            #+#    #+#             */
+/*   Updated: 2023/03/29 15:51:00 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int a)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'))
+	t_list	*temp;
+
+	if (!lst || !del)
+		return ;
+	temp = *lst;
+	while (temp != 0)
 	{
-		return (1);
+		temp = temp->next;
+		del((*lst)->content);
+		free(*lst);
+		*lst = temp;
 	}
-	else
-		return (0);
 }

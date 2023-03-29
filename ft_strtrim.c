@@ -6,7 +6,7 @@
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 18:41:31 by dchuah            #+#    #+#             */
-/*   Updated: 2023/03/21 16:07:46 by dchuah           ###   ########.fr       */
+/*   Updated: 2023/03/29 17:08:29 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int	main(void)
 // {
-// 	char *s1 = "   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me !\n   \n \n \t\t\n  ";
+// 	char *s1 = "   \t  \n\n \t\t  \n\n\nHello \t
+//  Please\n Trim me !\n   \n \n \t\t\n  ";
 // 	char *s2 = "Hello \t  Please\n Trim me !";
 // 	char *ret = ft_strtrim(s1, " \n\t");
 
