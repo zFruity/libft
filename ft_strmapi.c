@@ -6,7 +6,7 @@
 /*   By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 22:21:59 by dchuah            #+#    #+#             */
-/*   Updated: 2023/03/23 22:31:36 by dchuah           ###   ########.fr       */
+/*   Updated: 2023/04/05 19:13:37 by dchuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*s2;
 
 	i = 0;
-	if (!s)
+	if (!s || !f)
 		return (0);
 	s2 = malloc((sizeof(char) * (ft_strlen(s) + 1)));
 	if (!s2)
