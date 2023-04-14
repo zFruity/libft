@@ -6,7 +6,7 @@
 #    By: dchuah <dchuah@student.42kl.edu.my>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/05 12:01:03 by dchuah            #+#    #+#              #
-#    Updated: 2023/04/05 19:23:40 by dchuah           ###   ########.fr        #
+#    Updated: 2023/04/14 17:16:24 by dchuah           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,8 +68,8 @@ GCC     	=    gcc
 .c.o:
 	${GCC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${INCLUDES}
 
-$(NAME):    ${OBJS} 
-	${ARCR} ${NAME} ${OBJS} 
+$(NAME):    ${OBJS} ${BONUS_OBJS}
+	${ARCR} ${NAME} ${OBJS} ${BONUS_OBJS}
 
 all:    ${NAME}
 
@@ -81,5 +81,4 @@ fclean:    clean
 
 re:    fclean all
 
-bonus:    ${BONUS_OBJS}
-	${ARCR} $(NAME) ${BONUS_OBJS}
+bonus:   ${NAME}
